@@ -74,6 +74,8 @@ a {
   margin: 0;
 }
 
+.box { background:#090; }
+
 ul#chat {
   list-style: none;
   position: relative;
@@ -88,10 +90,10 @@ ul#chat {
 }
 
 ul#chat li {
-	padding: 10px;
-	border-top: 1px solid transparent;
-	border-bottom: 1px solid #F1F1F1;
-	font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #F1F1F1;
+  font-size: 12px;
 }
 
 ul#chat li .created_at {

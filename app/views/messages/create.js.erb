@@ -1,6 +1,8 @@
+
 <% broadcast "/messages/new" do %>
   $("#chat").append("<%= escape_javascript render(@message) %>");
   $("#new_message")[0].reset();
+
   var objDiv = document.getElementById("chat")
   objDiv.scrollTop = objDiv.scrollHeight;
 <% end %>

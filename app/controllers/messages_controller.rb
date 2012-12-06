@@ -4,7 +4,6 @@ class MessagesController < ApplicationController
   def index
     @messages = Message.one_hours
   end
-
   # GET /messages/1
   # GET /messages/1.json
   def show

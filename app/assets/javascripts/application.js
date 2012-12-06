@@ -22,4 +22,12 @@ $(function() {
   });
   var objDiv = document.getElementById("chat")
   objDiv.scrollTop = objDiv.scrollHeight;
+
+
+  // update = function setTime() {
+  // 	$(".entry-date").html(function(index, value) {
+  //   	return moment(value, "YYYY-MM-DDTHH:mm:ss").fromNow();
+  // 	});
+  // }
+  // update();
 });
