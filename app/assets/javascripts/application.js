@@ -20,4 +20,6 @@ $(function() {
   faye.subscribe("/messages/new", function(data) {
     eval(data);
   });
+  var objDiv = document.getElementById("chat")
+  objDiv.scrollTop = objDiv.scrollHeight;
 });
