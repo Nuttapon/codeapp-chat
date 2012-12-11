@@ -4,6 +4,24 @@
   <title>CodeappChat</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application","http://codeapp-fayeserver.herokuapp.com/faye.js" %>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      var validator = $("#new_message").validate({
+        rules: {
+          "message[content]": { required: true, minlength: 1}
+        }
+      });
+    });
+  </script>
+  <style>
+  label.error {
+    float: right;
+    margin-right: 800px;
+    margin-top: 2px;
+    color: red;
+    border-bottom: 1px solid;
+  }
+  </style>
   <%= csrf_meta_tags %>
 </head>
 <body>
